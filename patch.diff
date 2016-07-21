@@ -1,0 +1,34 @@
+From 8d77ab2f8258df76e8d7f1afef76cda1b1845e01 Mon Sep 17 00:00:00 2001
+From: syg <1045436827@qq.com>
+Date: Thu, 21 Jul 2016 15:02:35 +0800
+Subject: [PATCH] =?UTF-8?q?Revert=20"-[fix]22=E6=AC=A1"?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+This reverts commit 2ef4a4ea9b67ecb4301d25f294db26565017f94e.
+---
+ githubTest3/githubTest3/AppDelegate.m | 7 ++-----
+ 1 file changed, 2 insertions(+), 5 deletions(-)
+
+diff --git a/githubTest3/githubTest3/AppDelegate.m b/githubTest3/githubTest3/AppDelegate.m
+index 6d83d5b..e17b792 100644
+--- a/githubTest3/githubTest3/AppDelegate.m
++++ b/githubTest3/githubTest3/AppDelegate.m
+@@ -23,11 +23,8 @@
+ }
+ 
+ - (void)applicationWillResignActive:(UIApplication *)application {
+-    /**
+-     *  2222222次
+-     *
+-     *  @return <#return value description#>
+-     */
++    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
++    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+ }
+ 
+ - (void)applicationDidEnterBackground:(UIApplication *)application {
+-- 
+2.2.1
+
